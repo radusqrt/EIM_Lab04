@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ro.pub.cs.systems.eim.lab03.phonedialer.PhoneDialerActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/numberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <GridLayout
+            android:id="@+id/digitsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="59dp"
+            android:layout_marginRight="59dp"
+            android:columnCount="3"
+            android:rowCount="5">
+
+            <Button
+                android:id="@+id/button1"
+                android:text="1"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:text="2"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:text="3"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:text="4"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:text="5"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:text="6"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button7"
+                android:text="7"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:text="8"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:text="9"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonStar"
+                android:text="*"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button0"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonSharp"
+                android:text="#"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/buttonCall"
+                android:layout_width="88dp"
+                android:src="@drawable/call" />
+
+            <ImageButton
+                android:id="@+id/buttonBackspace"
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backspace" />
+
+            <ImageButton
+                android:id="@+id/buttonHangUp"
+                android:layout_width="78dp"
+                android:layout_height="47dp"
+                android:src="@drawable/hangup" />
+        </GridLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

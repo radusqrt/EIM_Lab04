@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ro.pub.cs.systems.eim.lab03.contactsmanager.ContactsManagerActivity">
+
+    <Button
+        android:id="@+id/showFieldsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOW ADDITIONAL FIELDS"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <LinearLayout
+        android:layout_below="@id/showFieldsButton"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Name"
+            app:layout_constraintBottom_toTopOf="@+id/phoneText"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <EditText
+            android:id="@+id/phoneText"
+            android:layout_width="333dp"
+            android:layout_height="43dp"
+            android:hint="1234567890"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="128dp" />
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="179dp" />
+
+        <EditText
+            android:id="@+id/addressText"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="225dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="271dp" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="271dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:visibility="invisible"
+            android:id="@+id/jobText"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:hint="Job Title"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="319dp" />
+
+        <EditText
+            android:visibility="invisible"
+            android:id="@+id/companyText"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="Company"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="371dp" />
+
+        <EditText
+            android:visibility="invisible"
+            android:id="@+id/websiteText"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:hint="Website"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="412dp" />
+
+        <EditText
+            android:visibility="invisible"
+            android:id="@+id/imText"
+            android:layout_width="331dp"
+            android:layout_height="wrap_content"
+            android:hint="IM"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="458dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
